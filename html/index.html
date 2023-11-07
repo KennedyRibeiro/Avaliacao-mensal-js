@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html lang="pt-br" data-bs-theme="light">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Avaliação Mensal - 2° Bimestre</title>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="../bootstrap-5.3.0-dist/css/bootstrap.min.css">
+</head>
+
+<body id="corpo">
+	<div class="container mt-4">
+
+		<h1 class="text-center mb-4">Avaliação Mensal - 2° Bimestre</h1>
+
+		<!-- Questão 1 - Divisão com validação -->
+		<div class="container questao-1">
+			<hr class="mt-4" />
+			<h2>Questão 1 - Divisão com validação</h2>
+			<hr class="mb-4" />
+			<form action="" class="row">
+				<div class="col-md-3">
+					<label for="numero-1">Numero 1:</label>
+					<input type="number" class="form-control" id="numero-1" name="numero-1" placeholder="Numero 1">
+				</div>
+				<div class="col-md-3">
+					<label for="numero-2">Numero 2:</label>
+					<input type="number" class="form-control" id="numero-2" name="numero-2" placeholder="Numero 2">
+				</div>
+			</form>
+			<div class="col-md-12 mt-4">
+				<button class="btn btn-success" id="botao-divisao">Obter resultado</button>
+			</div>
+			<div class="input-group mt-4">
+				<div class="input-group-text">Resultado:</div>
+				<input type="text" class="form-control" id="resultado-divisao" disabled readonly />
+			</div>
+		</div>
+
+		<!-- Questão 2 - Lista telefônica com exclusão -->
+		<div class="container questao-2">
+			<hr class="mt-4" />
+			<h2>Questão 2 - Lista telefônica com exclusão</h2>
+			<hr class="mb-4" />
+			<form action="" class="row">
+				<div class="col-md-4">
+					<label for="nome">Nome:</label>
+					<input type="text" class="form-control" id="nome" name="nome" placeholder="Nome do contato">
+				</div>
+				<div class="col-md-4">
+					<label for="telefone">Telefone:</label>
+					<input type="text" class="form-control" id="telefone" name="telefone" placeholder="Número de telefone">
+				</div>
+			</form>
+			<div class="col-md-12 mt-4 mb-4">
+				<button class="btn btn-success" id="botao-cadastrar-contato">Adicionar contato</button>
+			</div>
+			<div id="contatos">
+				<table class="table" id="tabela-contatos">
+					<thead>
+						<tr>
+							<th scope="col">Nome</th>
+							<th scope="col">Telefone</th>
+							<th scope="col">Ações</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+			<br>
+		</div>
+
+		<!-- Questão 3 - Adição de elementos dinâmicos -->
+		<div class="container questao-3">
+			<hr class="mt-4" />
+			<h2>Questão 3 - Adição de elementos dinâmicos</h2>
+			<hr class="mb-4" />
+			<form action="" class="row">
+				<div class="col-md-4">
+					<label for="forma">Forma:</label>
+					<select name="forma" id="forma" class="form-select">
+						<option value="">Selecione uma forma</option>
+						<option value="quadrado">Quadrado</option>
+						<option value="circulo">Círculo</option>
+						<option value="retangulo">Retângulo</option>
+					</select>
+				</div>
+				<div class="col-md-4">
+					<label for="cor">Cor:</label>
+					<select name="cor" id="cor" class="form-select">
+						<option value="">Selecione uma cor</option>
+						<option value="#1e824c">Verde</option>
+						<option value="#fad859">Amarelo</option>
+						<option value="#2574a9">Azul</option>
+						<option value="#d64541">Vermelho</option>
+						<option value="#f4b350">Laranja</option>
+						<option value="#bdc3c7">Cinza</option>
+					</select>
+				</div>
+			</form>
+			<div class="col-md-12 mt-4 mb-4">
+				<button class="btn btn-success" id="botao-adicionar-elemento">Adicionar Elemento</button>
+			</div>
+			<hr />
+			<div id="formas">
+
+			</div>
+			<br>
+		</div>
+	</div>
+</body>
+
+<script src="../js/index.js"></script>
+
+</html>
